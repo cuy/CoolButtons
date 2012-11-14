@@ -173,6 +173,8 @@
     [_innerGlowLayer setStartPoint:CGPointMake(0.5, 0.0)];
     CGFloat innerGlowHeight = 1 - ((bounds.size.height-2) / bounds.size.height);
     [_innerGlowLayer setEndPoint:CGPointMake(0.5, innerGlowHeight)];
+    
+    [self sendSubviewToBack:self.innerView];
 }
 
 @end
